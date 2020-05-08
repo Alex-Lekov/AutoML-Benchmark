@@ -1,0 +1,116 @@
+{
+   "name": "adult",
+   "title": "Adult",
+   "resources": [
+      {
+         "path": "adult.arff",
+         "pathType": "local",
+         "name": "adult",
+         "format": "arff",
+         "encoding": "ISO-8859-1"
+      },
+      {
+         "path": "adult.csv",
+         "pathType": "local",
+         "name": "adult",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-1",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "\""
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "age",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "workclass",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "fnlwgt",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "education",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "education-num",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "marital-status",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "occupation",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "relationship",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "race",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "sex",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "capitalgain",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "capitalloss",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "hoursperweek",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "native-country",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "class",
+                  "type": "string",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/179\n\nAuthor: Ronny Kohavi and Barry Becker  \nSource: [UCI](https://archive.ics.uci.edu/ml/datasets/Adult) - 1996-05-01  \nPlease cite: Ron Kohavi, \"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid\", Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996  \n\nNote: This dataset is not the original UCI dataset. It has some discretized features. See version 2 for the original.\n\nPrediction task is to determine whether a person makes over 50K a year. Extraction was done by Barry Becker from the 1994 Census database. A set of reasonably clean records was extracted using the following conditions: ((AAGE>16) && (AGI>100) && (AFNLWGT>1)&& (HRSWK>0))\n\nRonny Kohavi and Barry Becker. Data Mining and Visualization, Silicon Graphics.  \ne-mail: ronnyk '@' live.com for questions. \n\n",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/179\n\nAuthor: Ronny Kohavi an",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}

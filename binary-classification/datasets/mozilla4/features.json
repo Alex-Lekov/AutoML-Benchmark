@@ -1,0 +1,9 @@
+
+{
+    "id": "numerical",
+    "start": "numerical",
+    "end": "numerical",
+    "event": "binary",
+    "size": "numerical",
+    "state": "target"
+}

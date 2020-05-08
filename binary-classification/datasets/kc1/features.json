@@ -1,0 +1,25 @@
+
+{
+    "loc": "numerical",
+    "v(g)": "numerical",
+    "ev(g)": "numerical",
+    "iv(g)": "numerical",
+    "n": "numerical",
+    "v": "numerical",
+    "l": "numerical",
+    "d": "numerical",
+    "i": "numerical",
+    "e": "numerical",
+    "b": "numerical",
+    "t": "numerical",
+    "lOCode": "numerical",
+    "lOComment": "numerical",
+    "lOBlank": "numerical",
+    "locCodeAndComment": "categorical",
+    "uniq_Op": "numerical",
+    "uniq_Opnd": "numerical",
+    "total_Op": "numerical",
+    "total_Opnd": "numerical",
+    "branchCount": "numerical",
+    "defects": "target"
+}
