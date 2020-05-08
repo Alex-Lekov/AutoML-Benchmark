@@ -28,9 +28,10 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
 | TPOT | 7 |
 
 
+Total AUC on datasets:
 <table>
   <tr>
-   <td>
+   <td><strong>Framework / dataset</strong>
    </td>
    <td><strong>adult</strong>
    </td>
@@ -44,7 +45,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>TPOT</strong>
+   <td>TPOT
    </td>
    <td>0.9126
    </td>
@@ -58,7 +59,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>H2o</strong>
+   <td>H2o
    </td>
    <td>0.91428
    </td>
@@ -72,7 +73,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>LightGBM (default)</strong>
+   <td>LightGBM (default)
    </td>
    <td>0.91444
    </td>
@@ -86,7 +87,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>Auto_ml</strong>
+   <td>Auto_ml
    </td>
    <td>0.91466
    </td>
@@ -100,7 +101,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>AutoML_Alex (only LightGBM)</strong>
+   <td>AutoML_Alex (only LightGBM)
    </td>
    <td>0.91482
    </td>
@@ -114,7 +115,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
    </td>
   </tr>
   <tr>
-   <td><strong>CatBoost (default)</strong>
+   <td>CatBoost (default)
    </td>
    <td><strong>0.91498</strong>
    </td>
