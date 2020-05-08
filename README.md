@@ -29,103 +29,297 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
 
 
 Total AUC on datasets:
+
+
 <table>
   <tr>
-   <td><strong>Framework / dataset</strong>
+   <td>Framework/dataset
    </td>
-   <td><strong>adult</strong>
+   <td colspan="2" ><strong>adult</strong>
    </td>
-   <td><strong>Amazon_employee_access</strong>
+   <td colspan="2" ><strong>Amazon_employee_access</strong>
    </td>
-   <td><strong>bank-marketing</strong>
+   <td colspan="2" ><strong>bank-marketing</strong>
    </td>
-   <td><strong>Click_prediction_small</strong>
+   <td colspan="2" ><strong>Click_prediction_small</strong>
    </td>
-   <td><strong>credit-g</strong>
+   <td colspan="2" ><strong>credit-g</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
    </td>
   </tr>
   <tr>
    <td>TPOT
    </td>
-   <td>0.9126
+   <td><p style="text-align: right">
+0,9126</p>
+
    </td>
-   <td>0.7895
+   <td>0,0026
    </td>
-   <td>0.84918
+   <td><p style="text-align: right">
+0,7895</p>
+
    </td>
-   <td>0.71136
+   <td><p style="text-align: right">
+0,0339</p>
+
    </td>
-   <td>0.78164
+   <td><p style="text-align: right">
+0,8492</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0070</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7114</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0045</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7816</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0189</p>
+
    </td>
   </tr>
   <tr>
    <td>H2o
    </td>
-   <td>0.91428
+   <td><p style="text-align: right">
+0,9143</p>
+
    </td>
-   <td>0.8551
+   <td>0,0020
    </td>
-   <td>0.9371
+   <td><p style="text-align: right">
+0,8551</p>
+
    </td>
-   <td>0.72056
+   <td><p style="text-align: right">
+0,0030</p>
+
    </td>
-   <td>0.77646
+   <td><p style="text-align: right">
+0,9371</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0037</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7206</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0041</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7765</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0479</p>
+
    </td>
   </tr>
   <tr>
    <td>LightGBM (default)
    </td>
-   <td>0.91444
+   <td><p style="text-align: right">
+0,9144</p>
+
    </td>
-   <td>0.8463
+   <td>0,0037
    </td>
-   <td>0.93646
+   <td><p style="text-align: right">
+0,8463</p>
+
    </td>
-   <td>0.71598
+   <td><p style="text-align: right">
+0,0113</p>
+
    </td>
-   <td>0.77954
+   <td><p style="text-align: right">
+0,9365</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0034</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7160</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0057</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7795</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0274</p>
+
    </td>
   </tr>
   <tr>
    <td>Auto_ml
    </td>
-   <td>0.91466
+   <td><p style="text-align: right">
+0,9147</p>
+
    </td>
-   <td>0.8286
+   <td>0,0033
    </td>
-   <td>0.90354
+   <td><p style="text-align: right">
+0,8286</p>
+
    </td>
-   <td>0.71884
+   <td><p style="text-align: right">
+0,0144</p>
+
    </td>
-   <td><strong>0.79252</strong>
+   <td><p style="text-align: right">
+0,9035</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0058</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7188</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0066</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7925</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0227</p>
+
    </td>
   </tr>
   <tr>
    <td>AutoML_Alex (only LightGBM)
    </td>
-   <td>0.91482
+   <td><p style="text-align: right">
+0,9148</p>
+
    </td>
-   <td><strong>0.8577</strong>
+   <td>0,0036
    </td>
-   <td><strong>0.93848</strong>
+   <td><p style="text-align: right">
+0,8577</p>
+
    </td>
-   <td>0.71728
+   <td><p style="text-align: right">
+0,0080</p>
+
    </td>
-   <td>0.78524
+   <td><p style="text-align: right">
+0,9385</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0030</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7173</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0044</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7852</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0311</p>
+
    </td>
   </tr>
   <tr>
    <td>CatBoost (default)
    </td>
-   <td><strong>0.91498</strong>
+   <td><p style="text-align: right">
+0,9150</p>
+
    </td>
-   <td>0.8467
+   <td>0,0030
    </td>
-   <td>0.93792
+   <td><p style="text-align: right">
+0,8467</p>
+
    </td>
-   <td><strong>0.71912</strong>
+   <td><p style="text-align: right">
+0,0090</p>
+
    </td>
-   <td>0.78374
+   <td><p style="text-align: right">
+0,9379</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0040</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7191</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0058</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7837</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0222</p>
+
    </td>
   </tr>
 </table>
