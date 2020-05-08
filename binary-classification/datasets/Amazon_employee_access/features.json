@@ -1,0 +1,13 @@
+
+{
+    "RESOURCE": "numerical",
+    "MGR_ID": "numerical",
+    "ROLE_ROLLUP_1": "categorical",
+    "ROLE_ROLLUP_2": "categorical",
+    "ROLE_DEPTNAME": "categorical",
+    "ROLE_TITLE": "categorical",
+    "ROLE_FAMILY_DESC": "numerical",
+    "ROLE_FAMILY": "categorical",
+    "ROLE_CODE": "categorical",
+    "target": "target"
+}

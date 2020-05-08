@@ -1,0 +1,126 @@
+{
+   "name": "bank-marketing",
+   "title": "Bank marketing",
+   "resources": [
+      {
+         "path": "bank-marketing.arff",
+         "pathType": "local",
+         "name": "bank-marketing",
+         "format": "arff",
+         "encoding": "UTF-8"
+      },
+      {
+         "path": "bank-marketing.csv",
+         "pathType": "local",
+         "name": "bank-marketing",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-1",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "\""
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "V1",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V2",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V3",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V4",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V5",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V6",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V7",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V8",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V9",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V10",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V11",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "V12",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V13",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V14",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V15",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V16",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "Class",
+                  "type": "number",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/1461\n\nAuthor: Paulo Cortez, S\u00e9rgio Moro\nSource: [UCI](https://archive.ics.uci.edu/ml/datasets/bank+marketing)\nPlease cite: S. Moro, R. Laureano and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference - ESM'2011, pp. 117-121, Guimar\u00e3es, Portugal, October, 2011. EUROSIS.       \n\nBank Marketing  \nThe data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed. \n\nThe classification goal is to predict if the client will subscribe a term deposit (variable y).\n\n### Attribute information  \nFor more information, read [Moro et al., 2011].\n\nInput variables:\n\n- bank client data:\n\n1 - age (numeric) \n\n2 - job : type of job (categorical: \"admin.\",\"unknown\",\"unemployed\",\"management\",\"housemaid\",\"entrepreneur\", \"student\",\"blue-collar\",\"self-employed\",\"retired\",\"technician\",\"services\") \n\n3 - marital : marital status (categorical: \"married\",\"divorced\",\"single\"; note: \"divorced\"  means divorced or widowed) \n\n4 - education (categorical: \"unknown\",\"secondary\",\"primary\",\"tertiary\") \n\n5 - default: has credit in default? (binary: \"yes\",\"no\") \n\n6 - balance: average yearly balance, in euros (numeric) \n\n7 - housing: has housing loan? (binary: \"yes\",\"no\") \n\n8 - loan: has personal loan? (binary: \"yes\",\"no\")\n\n- related with the last contact of the current campaign:\n\n9 - contact: contact communication type (categorical: \"unknown\",\"telephone\",\"cellular\")\n\n10 - day: last contact day of the month (numeric)\n\n11 - month: last contact month of year (categorical: \"jan\", \"feb\", \"mar\", ..., \"nov\", \"dec\")\n\n12 - duration: last contact duration, in seconds (numeric)\n\n- other attributes:\n\n13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)\n\n14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted) \n\n15 - previous: number of contacts performed before this campaign and for this client (numeric) \n\n16 - poutcome: outcome of the previous marketing campaign (categorical: \"unknown\",\"other\",\"failure\",\"success\")\n \n- output variable (desired target):\n\n17 - y - has the client subscribed a term deposit? (binary: \"yes\",\"no\")\n",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/1461\n\nAuthor: Paulo Cortez, ",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}

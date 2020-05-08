@@ -1,0 +1,80 @@
+version: '3'
+services:
+  # auto_ml:
+  #   build: ./Auto_ml
+  #   restart: "no"
+  #   volumes:
+  #   - ./Auto_ml:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   command: python3 -u ./model.py
+
+  # autosklearn:
+  #   build: ./autosklearn
+  #   restart: "no"
+  #   volumes:
+  #   - ./autosklearn:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   #command: sh -c "sleep 18900 && python3 -u ./model.py"
+  #   command: python3 -u ./model.py
+    
+
+  # tpot:
+  #   build: ./tpot
+  #   restart: "no"
+  #   volumes:
+  #   - ./tpot:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   command: python3 -u ./model.py
+    #command: sh -c "sleep 18900 && python3 -u ./model.py"
+
+  # h2o:
+  #   build: ./h2o
+  #   restart: "no"
+  #   volumes:
+  #   - ./h2o:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   command: python3 -u ./model.py
+
+  # lightgbm-opt:
+  #   build: ./lightgbm-opt
+  #   restart: "no"
+  #   volumes:
+  #   - ./lightgbm-opt:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   - ../../../alexautoml:/opt/automl/alexautoml
+  #   working_dir: /opt/automl/
+  #   command: python3 -u model.py
+
+  automl_alex:
+    build: ./automl_alex
+    restart: "no"
+    volumes:
+    - ./automl_alex:/opt/automl/
+    - ../datasets:/opt/automl/datasets
+    working_dir: /opt/automl/
+    command: python3 -u model.py
+
+
+  # catboost-default:
+  #   build: ./catboost-default
+  #   restart: "no"
+  #   volumes:
+  #   - ./catboost-default:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   #- ../../../alexautoml:/opt/automl/alexautoml
+  #   working_dir: /opt/automl/
+  #   command: python3 -u model.py
+
+
+  # lightgbm-default:
+  #   build: ./lightgbm-default
+  #   restart: "no"
+  #   volumes:
+  #   - ./lightgbm-default:/opt/automl/
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   command: python3 -u model.py

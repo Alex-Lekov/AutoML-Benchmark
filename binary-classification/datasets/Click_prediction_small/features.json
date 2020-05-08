@@ -1,0 +1,15 @@
+
+{
+    "impression": "categorical",
+    "url_hash": "numerical",
+    "ad_id": "numerical",
+    "advertiser_id": "numerical",
+    "depth": "categorical",
+    "position": "categorical",
+    "query_id": "numerical",
+    "keyword_id": "numerical",
+    "title_id": "numerical",
+    "description_id": "numerical",
+    "user_id": "numerical",
+    "click": "target"
+}

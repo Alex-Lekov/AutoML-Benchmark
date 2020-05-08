@@ -1,0 +1,146 @@
+{
+   "name": "credit-g",
+   "title": "Credit g",
+   "resources": [
+      {
+         "path": "credit-g.arff",
+         "pathType": "local",
+         "name": "credit-g",
+         "format": "arff",
+         "encoding": "ISO-8859-1"
+      },
+      {
+         "path": "credit-g.csv",
+         "pathType": "local",
+         "name": "credit-g",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-1",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "'"
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "checking_status",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "duration",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "credit_history",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "purpose",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "credit_amount",
+                  "type": "any",
+                  "format": "default"
+               },
+               {
+                  "name": "savings_status",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "employment",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "installment_commitment",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "personal_status",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "other_parties",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "residence_since",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "property_magnitude",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "age",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "other_payment_plans",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "housing",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "existing_credits",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "job",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "num_dependents",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "own_telephone",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "foreign_worker",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "class",
+                  "type": "string",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/31\n\nAuthor: Dr. Hans Hofmann  \nSource: [UCI](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) - 1994    \nPlease cite: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)\n\nGerman Credit data  \nThis dataset classifies people described by a set of attributes as good or bad credit risks.\n\nThis dataset comes with a cost matrix: \n``` \n      Good  Bad (predicted)  \nGood   0    1   (actual)  \nBad    5    0  \n```\n\nIt is worse to class a customer as good when they are bad (5), than it is to class a customer as bad when they are good (1).  \n\n### Attribute description  \n\n1. Status of existing checking account, in Deutsche Mark.  \n2. Duration in months  \n3. Credit history (credits taken, paid back duly, delays, critical accounts)  \n4. Purpose of the credit (car, television,...)  \n5. Credit amount  \n6. Status of savings account/bonds, in Deutsche Mark.  \n7. Present employment, in number of years.  \n8. Installment rate in percentage of disposable income  \n9. Personal status (married, single,...) and sex  \n10. Other debtors / guarantors  \n11. Present residence since X years  \n12. Property (e.g. real estate)  \n13. Age in years  \n14. Other installment plans (banks, stores)  \n15. Housing (rent, own,...)  \n16. Number of existing credits at this bank  \n17. Job  \n18. Number of people being liable to provide maintenance for  \n19. Telephone (yes,no)  \n20. Foreign worker (yes,no)  \n",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/31\n\nAuthor: Dr. Hans Hofmann",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}

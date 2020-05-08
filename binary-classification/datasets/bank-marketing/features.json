@@ -1,0 +1,19 @@
+{
+    "V1":"numerical",
+    "V2": "categorical",
+    "V3": "categorical",
+    "V4": "categorical",
+    "V5": "categorical",
+    "V6": "numerical",
+    "V7": "categorical",
+    "V8": "categorical",
+    "V9": "categorical",
+    "V10": "numerical",
+    "V11": "categorical",
+    "V12": "numerical",
+    "V13": "numerical",
+    "V14": "numerical",
+    "V15": "numerical",
+    "V16": "categorical",
+    "Class": "target"
+}

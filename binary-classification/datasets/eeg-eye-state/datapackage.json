@@ -1,0 +1,116 @@
+{
+   "name": "eeg-eye-state",
+   "title": "Eeg eye state",
+   "resources": [
+      {
+         "path": "eeg-eye-state.arff",
+         "pathType": "local",
+         "name": "eeg-eye-state",
+         "format": "arff",
+         "encoding": "ISO-8859-1"
+      },
+      {
+         "path": "eeg-eye-state.csv",
+         "pathType": "local",
+         "name": "eeg-eye-state",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-2",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "\""
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "V1",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V2",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V3",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V4",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V5",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V6",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V7",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V8",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V9",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V10",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V11",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V12",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V13",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "V14",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "Class",
+                  "type": "number",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/1471\n\nAuthor: Oliver Roesler  \nSource: [UCI](https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State), Baden-Wuerttemberg, Cooperative State University (DHBW), Stuttgart, Germany  \nPlease cite: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)  \n\nAll data is from one continuous EEG measurement with the Emotiv EEG Neuroheadset. The duration of the measurement was 117 seconds. The eye state was detected via a camera during the EEG measurement and added later manually to the file after analyzing the video frames. '1' indicates the eye-closed and '0' the eye-open state. All values are in chronological order with the first measured value at the top of the data.\n\nThe features correspond to 14 EEG measurements from the headset, originally labeled AF3, F7, F3, FC5, T7, P, O1, O2, P8, T8, FC6, F4, F8, AF4, in that order.",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/1471\n\nAuthor: Oliver Roesler",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}

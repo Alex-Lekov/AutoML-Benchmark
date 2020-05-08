@@ -1,0 +1,81 @@
+{
+   "name": "airlines",
+   "title": "Airlines",
+   "resources": [
+      {
+         "path": "airlines.csv",
+         "pathType": "local",
+         "name": "airlines",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-1",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "\""
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "Airline",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "Flight",
+                  "type": "year",
+                  "format": "default"
+               },
+               {
+                  "name": "AirportFrom",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "AirportTo",
+                  "type": "string",
+                  "format": "default"
+               },
+               {
+                  "name": "DayOfWeek",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "Time",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "Length",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "Delay",
+                  "type": "number",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      },
+      {
+         "path": "airlines.arff",
+         "pathType": "local",
+         "name": "airlines",
+         "format": "arff",
+         "encoding": "ISO-8859-1"
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/1169\n\nAuthor: Albert Bifet, Elena Ikonomovska  \nSource: [Data Expo competition](http://kt.ijs.si/elena_ikonomovska/data.html) - 2009  \nPlease cite:   \n\nAirlines Dataset Inspired in the regression dataset from Elena Ikonomovska. The task is to predict whether a given flight will be delayed, given the information of the scheduled departure.",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/1169\n\nAuthor: Albert Bifet, ",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}

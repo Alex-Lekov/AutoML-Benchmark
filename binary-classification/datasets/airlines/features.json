@@ -1,0 +1,11 @@
+
+{
+    "Airline": "categorical",
+    "Flight": "numerical",
+    "AirportFrom": "categorical",
+    "AirportTo": "categorical",
+    "DayOfWeek": "categorical",
+    "Time": "numerical",
+    "Length": "numerical",
+    "Delay": "target"
+}

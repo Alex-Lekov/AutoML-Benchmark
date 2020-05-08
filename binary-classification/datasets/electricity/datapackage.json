@@ -1,0 +1,86 @@
+{
+   "name": "electricity",
+   "title": "Electricity",
+   "resources": [
+      {
+         "path": "electricity.arff",
+         "pathType": "local",
+         "name": "electricity",
+         "format": "arff",
+         "encoding": "ISO-8859-2"
+      },
+      {
+         "path": "electricity.csv",
+         "pathType": "local",
+         "name": "electricity",
+         "format": "csv",
+         "mediatype": "text/csv",
+         "encoding": "ISO-8859-2",
+         "dialect": {
+            "delimiter": ",",
+            "quoteChar": "\""
+         },
+         "schema": {
+            "fields": [
+               {
+                  "name": "date",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "day",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "period",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "nswprice",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "nswdemand",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "vicprice",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "vicdemand",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "transfer",
+                  "type": "number",
+                  "format": "default"
+               },
+               {
+                  "name": "class",
+                  "type": "string",
+                  "format": "default"
+               }
+            ],
+            "missingValues": [
+               ""
+            ]
+         }
+      }
+   ],
+   "readme": "The resources for this dataset can be found at https://www.openml.org/d/151\n\nAuthor: M. Harries, J. Gama, A. Bifet  \nSource: [Joao Gama](http://www.inescporto.pt/~jgama/ales/ales_5.html) - 2009  \nPlease cite: None  \n\nElectricity is a widely used dataset described by M. Harries and analyzed by J. Gama (see papers below). This data was collected from the Australian New South Wales Electricity Market. In this market, prices are not fixed and are affected by demand and supply of the market. They are set every five minutes. Electricity transfers to/from the neighboring state of Victoria were done to alleviate fluctuations.\n\nThe dataset (originally named ELEC2) contains 45,312 instances dated from 7 May 1996 to 5 December 1998. Each example of the dataset refers to a period of 30 minutes, i.e. there are 48 instances for each time period of one day. Each example on the dataset has 5 fields, the day of week, the time stamp, the New South Wales electricity demand, the Victoria electricity demand, the scheduled electricity transfer between states and the class label. The class label identifies the change of the price (UP or DOWN) in New South Wales relative to a moving average of the last 24 hours (and removes the impact of longer term price trends). \n\nThe data was normalized by A. Bifet.\n\n### Attribute information  \n* Date: date between 7 May 1996 to 5 December 1998. Here normalized between 0 and 1\n* Day: day of the week (1-7)\n* Period: time of the measurement (1-48) in half hour intervals over 24 hours. Here normalized between 0 and 1\n* NSWprice: New South Wales electricity price, normalized between 0 and 1\n* NSWdemand: New South Wales electricity demand, normalized between 0 and 1\n* VICprice: Victoria electricity price, normalized between 0 and 1\n* VICdemand: Victoria electricity demand, normalized between 0 and 1\n* transfer: scheduled electricity transfer between both states, normalized between 0 and 1\n\n### Relevant papers  \nM. Harries. Splice-2 comparative evaluation: Electricity pricing. Technical report, The University of South Wales, 1999.  \nJ. Gama, P. Medas, G. Castillo, and P. Rodrigues. Learning with drift detection. In SBIA Brazilian Symposium on Artificial Intelligence, pages 286\u2013295, 2004.  ",
+   "description": "The resources for this dataset can be found at https://www.openml.org/d/151\n\nAuthor: M. Harries, J. ",
+   "licenses": [
+      {
+         "name": "ODC-PDDL",
+         "path": "http://opendatacommons.org/licenses/pddl/",
+         "title": "Open Data Commons Public Domain Dedication and License"
+      }
+   ]
+}
