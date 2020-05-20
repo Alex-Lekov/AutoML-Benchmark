@@ -16,7 +16,7 @@ In the benchmark framework:
 ## Binary-Classification
 Sum of positions in the rating for all datasets. (The bigger, the better):
 
-<img width=800 src="./img/AUC_place.png" alt="bench">
+<img width=800 src="./img/AUC_place_v2.png" alt="bench">
 
 
 | Framework | AUC place |
