@@ -10,6 +10,7 @@ In the benchmark framework:
 * [Auto_ml](https://github.com/ClimbsRocks/auto_ml)
 * [CatBoost](https://github.com/catboost/catboost) (default params)
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params)
+* [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) 
 * AutoML_Alex (only LightGBM)
 
 ## Binary-Classification
@@ -20,10 +21,12 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
 
 | Framework | AUC place |
 | ------ | ------ |
-| AutoML_Alex (only LightGBM) | 25 |
-| CatBoost (default) | 24 |
-| Auto_ml | 18 |
-| H2o | 18 |
+
+| AutoML_Alex | 30 |
+| AutoML_Alex (only LightGBM) | 26 |
+| CatBoost (default) | 25 |
+| H2o | 20 |
+| Auto_ml | 19 |
 | LightGBM (default) | 13 |
 | TPOT | 7 |
 
