@@ -21,7 +21,6 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
 
 | Framework | AUC place |
 | ------ | ------ |
-
 | AutoML_Alex | 30 |
 | AutoML_Alex (only LightGBM) | 26 |
 | CatBoost (default) | 25 |
