@@ -145,3 +145,9 @@ binary-classification/frameworks/automl_alex/catboost_info/test_error.tsv
 binary-classification/frameworks/automl_alex/catboost_info/time_left.tsv
 binary-classification/frameworks/automl_alex/catboost_info/learn/events.out.tfevents
 binary-classification/frameworks/automl_alex/catboost_info/test/events.out.tfevents
+binary-classification/frameworks/automl_alex/catboost_info/catboost_training.json
+binary-classification/frameworks/automl_alex/catboost_info/learn_error.tsv
+binary-classification/frameworks/automl_alex/catboost_info/test_error.tsv
+binary-classification/frameworks/automl_alex/catboost_info/time_left.tsv
+binary-classification/frameworks/automl_alex/catboost_info/learn/events.out.tfevents
+binary-classification/frameworks/automl_alex/catboost_info/test/events.out.tfevents

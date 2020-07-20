@@ -81,260 +81,154 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
     <tr>
    <td><b>AutoML_Alex</b>
    </td>
-   <td><p style="text-align: right">
-<b>0,9156</b></p>
-
-   </td>
-   <td>0,0037
-   </td>
-   <td><p style="text-align: right">
-<b>0,8668</b></p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0125</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9385</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0030</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7173</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0044</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7852</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0311</p>
+   <td>
+<b>0,9156</b></td>
+   <td>
+0,0037</td>
+   <td>
+<b>0,8668<b></td>
+   <td>
+0,0125</td>
+   <td>
+<b>0,9385</b></td>
+   <td>
+0,0030</td>
+   <td>
+0,7173</td>
+   <td>
+0,0044</td>
+   <td>
+0,7852</td>
+   <td>
+0,0311
    </td>
   </tr>
 
   <tr>
    <td>TPOT
    </td>
-   <td><p style="text-align: right">
-0,9126</p>
-
-   </td>
-   <td>0,0026
-   </td>
-   <td><p style="text-align: right">
-0,7895</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0339</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,8492</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0070</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7114</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0045</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7816</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0189</p>
-
-   </td>
+   <td>
+0,9126</td>
+   <td>
+0,0026</td>
+   <td>
+0,7895</td>
+   <td>
+0,0339</td>
+   <td>
+0,8492</td>
+   <td>
+0,0070</td>
+   <td>
+0,7114</td>
+   <td>
+0,0045</td>
+   <td>
+0,7816</td>
+   <td>
+0,0189</td>
   </tr>
   <tr>
    <td>H2o
    </td>
-   <td><p style="text-align: right">
-0,9143</p>
-
-   </td>
-   <td>0,0020
-   </td>
-   <td><p style="text-align: right">
-0,8551</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0030</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9371</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0037</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7206</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0041</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7765</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0479</p>
-
-   </td>
+   <td>
+0,9143</td>
+   <td>
+0,0020</td>
+   <td>
+0,8551</td>
+   <td>
+0,0030</td>
+   <td>
+0,9371</td>
+   <td>
+0,0037</td>
+   <td>
+0,7206</td>
+   <td>
+0,0041</td>
+   <td>
+0,7765</td>
+   <td>
+0,0479</td>
   </tr>
 
   <tr>
    <td>Auto_ml
    </td>
-   <td><p style="text-align: right">
-0,9147</p>
-
-   </td>
-   <td>0,0033
-   </td>
-   <td><p style="text-align: right">
-0,8286</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0143</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9035</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0058</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7188</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0066</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7925</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0227</p>
-
-   </td>
+   <td>
+0,9147</td>
+   <td>
+0,0033</td>
+   <td>
+0,8286</td>
+   <td>
+0,0143</td>
+   <td>
+0,9035</td>
+   <td>
+0,0058</td>
+   <td>
+0,7188</td>
+   <td>
+0,0066</td>
+   <td>
+0,7925</td>
+   <td>
+0,0227</td>
   </tr>
 
   <tr>
    <td>LightGBM
    </td>
-   <td><p style="text-align: right">
-0,9144</p>
-
-   </td>
-   <td>0,0037
-   </td>
-   <td><p style="text-align: right">
-0,8463</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0113</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9365</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0034</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7160</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0057</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7795</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0274</p>
-
-   </td>
+   <td>
+0,9144</td>
+   <td>
+0,0037</td>
+   <td>
+0,8463</td>
+   <td>
+0,0113</td>
+   <td>
+0,9365</td>
+   <td>
+0,0034</td>
+   <td>
+0,7160</td>
+   <td>
+0,0057</td>
+   <td>
+0,7795</td>
+   <td>
+0,0274</td>
   </tr>
   <tr>
    <td>CatBoost
    </td>
-   <td><p style="text-align: right">
-0,9150</p>
-
-   </td>
-   <td>0,0030
-   </td>
-   <td><p style="text-align: right">
-0,8467</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0090</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9379</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0040</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7191</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0058</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7837</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0222</p>
-
-   </td>
+   <td>
+0,9150</td>
+   <td>
+0,0030</td>
+   <td>
+0,8467</td>
+   <td>
+0,0090</td>
+   <td>
+0,9379</td>
+   <td>
+0,0040</td>
+   <td>
+0,7191</td>
+   <td>
+0,0058</td>
+   <td>
+0,7837</td>
+   <td>
+0,0222</td>
   </tr>
 </table>
 
 
-## Boxplot Datasets:
-<p><img width=800 src="./img/adult.png" alt="datset_adult"></p>
-<p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult"></p>
+## Boxplot Scores:
+<p><img width=800 src="./img/adult.png" alt="datset_adult">
+<p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult">
