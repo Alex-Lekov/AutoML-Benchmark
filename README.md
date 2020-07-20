@@ -29,10 +29,10 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 | Framework | Place |
 | ------ | ------ |
 | AutoML_Alex | 30 |
-| CatBoost (default) | 25 |
+| CatBoost | 25 |
 | H2o | 20 |
 | Auto_ml | 19 |
-| LightGBM (default) | 13 |
+| LightGBM | 13 |
 | TPOT | 7 |
 
 
@@ -43,15 +43,15 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
   <tr>
    <td>Framework/dataset
    </td>
-   <td colspan="2" ><strong>adult</strong>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/adult">adult</a></strong>
    </td>
-   <td colspan="2" ><strong>amazon</strong>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/Amazon_employee_access">amazon</a></strong>
    </td>
-   <td colspan="2" ><strong>bank-marketing</strong>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/bank-marketing">bank-marketing</a></strong>
    </td>
-   <td colspan="2" ><strong>click_predict</strong>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/Click_prediction_small">click_predict</a></strong>
    </td>
-   <td colspan="2" ><strong>credit-g</strong>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/credit-g">credit-g</a></strong>
    </td>
   </tr>
   <tr>
@@ -78,6 +78,48 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>auc_std
    </td>
   </tr>
+    <tr>
+   <td><b>AutoML_Alex</b>
+   </td>
+   <td><p style="text-align: right">
+<b>0,9156</b></p>
+
+   </td>
+   <td>0,0037
+   </td>
+   <td><p style="text-align: right">
+<b>0,8668</b></p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0125</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,9385</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0030</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7173</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0044</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7852</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0311</p>
+   </td>
+  </tr>
+
   <tr>
    <td>TPOT
    </td>
@@ -162,8 +204,52 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 
    </td>
   </tr>
+
   <tr>
-   <td>LightGBM (default)
+   <td>Auto_ml
+   </td>
+   <td><p style="text-align: right">
+0,9147</p>
+
+   </td>
+   <td>0,0033
+   </td>
+   <td><p style="text-align: right">
+0,8286</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0143</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,9035</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0058</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7188</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0066</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,7925</p>
+
+   </td>
+   <td><p style="text-align: right">
+0,0227</p>
+
+   </td>
+  </tr>
+
+  <tr>
+   <td>LightGBM
    </td>
    <td><p style="text-align: right">
 0,9144</p>
@@ -205,91 +291,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    </td>
   </tr>
   <tr>
-   <td>Auto_ml
-   </td>
-   <td><p style="text-align: right">
-0,9147</p>
-
-   </td>
-   <td>0,0033
-   </td>
-   <td><p style="text-align: right">
-0,8286</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0144</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9035</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0058</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7188</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0066</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7925</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0227</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td><b>AutoML_Alex</b>
-   </td>
-   <td><p style="text-align: right">
-<b>0.9156</b></p>
-
-   </td>
-   <td>0,0037
-   </td>
-   <td><p style="text-align: right">
-0,8577</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0080</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,9385</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0030</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7173</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0044</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,7852</p>
-
-   </td>
-   <td><p style="text-align: right">
-0,0311</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>CatBoost (default)
+   <td>CatBoost
    </td>
    <td><p style="text-align: right">
 0,9150</p>
@@ -332,5 +334,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
   </tr>
 </table>
 
+
 ## Boxplot Datasets:
-<img width=800 src="./img/adult.png" alt="datset_adult">
+<p><img width=800 src="./img/adult.png" alt="datset_adult"></p>
+<p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult"></p>
