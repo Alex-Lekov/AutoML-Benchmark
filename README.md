@@ -3,7 +3,7 @@ A Performance Benchmark of Different AutoML Frameworks
 
 ---
 
-## Frameworks
+# Frameworks
 In the benchmark framework:
 * [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html)
 * [TPOT](https://github.com/EpistasisLab/tpot)
@@ -11,18 +11,24 @@ In the benchmark framework:
 * [CatBoost](https://github.com/catboost/catboost) (default params)
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params)
 * [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) 
-* AutoML_Alex (only LightGBM)
 
-## Binary-Classification
-Sum of positions in the rating for all datasets. (The bigger, the better):
+
+# Benchmark Settings
+* Repeated 5 times (on 5 K-folds)
+* Time Limit 1 hour on fold
+* Chose datasets from 1000 and more rows/examples
+* Docker
+
+
+# Binary-Classification
+Sum of revers positions in the rating for all datasets. (The bigger, the better):
 
 <img width=800 src="./img/AUC_place_v2.png" alt="bench">
 
 
-| Framework | AUC place |
+| Framework | Place |
 | ------ | ------ |
 | AutoML_Alex | 30 |
-| AutoML_Alex (only LightGBM) | 26 |
 | CatBoost (default) | 25 |
 | H2o | 20 |
 | Auto_ml | 19 |
@@ -30,7 +36,7 @@ Sum of positions in the rating for all datasets. (The bigger, the better):
 | TPOT | 7 |
 
 
-Total AUC on datasets:
+## Total AUC on datasets:
 
 
 <table>
@@ -39,11 +45,11 @@ Total AUC on datasets:
    </td>
    <td colspan="2" ><strong>adult</strong>
    </td>
-   <td colspan="2" ><strong>Amazon_employee_access</strong>
+   <td colspan="2" ><strong>amazon</strong>
    </td>
    <td colspan="2" ><strong>bank-marketing</strong>
    </td>
-   <td colspan="2" ><strong>Click_prediction_small</strong>
+   <td colspan="2" ><strong>click_predict</strong>
    </td>
    <td colspan="2" ><strong>credit-g</strong>
    </td>
@@ -241,13 +247,13 @@ Total AUC on datasets:
    </td>
   </tr>
   <tr>
-   <td>AutoML_Alex (only LightGBM)
+   <td><b>AutoML_Alex</b>
    </td>
    <td><p style="text-align: right">
-0,9148</p>
+<b>0.9156</b></p>
 
    </td>
-   <td>0,0036
+   <td>0,0037
    </td>
    <td><p style="text-align: right">
 0,8577</p>
@@ -325,3 +331,6 @@ Total AUC on datasets:
    </td>
   </tr>
 </table>
+
+## Boxplot Datasets:
+<img width=800 src="./img/adult.png" alt="datset_adult">

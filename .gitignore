@@ -135,3 +135,5 @@ dmypy.json
 *.catboost_info
 */.catboost_info
 *.gsheet
+*/*/.catboost_info
+*/catboost_info/*
