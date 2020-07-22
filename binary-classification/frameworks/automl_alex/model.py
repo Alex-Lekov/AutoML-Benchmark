@@ -25,6 +25,7 @@ TIME_LIMIT = 3600 # 1h
 CV = 5
 
 for DATASET_NAME in all_datasets_ls:
+    print('_'*75)
     metrics = []
     # ./automl-benchmark/binary-classification/datasets/{DATASET_NAME}/features.json
     with open(f'./datasets/{DATASET_NAME}/features.json') as f:
@@ -96,6 +97,7 @@ for DATASET_NAME in all_datasets_ls:
         #y_test_predict = automl.predict(X_test)
 
         print('AUC: ', round(roc_auc_score(y_test, y_test_predict_proba),4))
+        print('-'*75)
         #print('Mean Test AUC: ', round(sklearn.metrics.roc_auc_score(y_test, model._data.X_test_predicts.T.mean()),4))
 
         END_EXPERIMENT = time.time()

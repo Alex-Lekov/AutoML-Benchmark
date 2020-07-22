@@ -90,9 +90,9 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0125</td>
    <td>
-<b>0,9385</b></td>
+0,9376</td>
    <td>
-0,0030</td>
+0.0039</td>
    <td>
 0,7173</td>
    <td>
@@ -214,7 +214,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0090</td>
    <td>
-0,9379</td>
+<b>0,9379</b></td>
    <td>
 0,0040</td>
    <td>
@@ -232,3 +232,4 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 ## Boxplot Scores:
 <p><img width=800 src="./img/adult.png" alt="datset_adult">
 <p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult">
+<p><img width=800 src="./img/bank-marketing.png" alt="datset_adult">
