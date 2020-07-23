@@ -86,7 +86,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0037</td>
    <td>
-<b>0,8668<b></td>
+<b>0,8668</b></td>
    <td>
 0,0125</td>
    <td>
@@ -94,9 +94,9 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0.0039</td>
    <td>
-0,7173</td>
+<b>0,7231</b></td>
    <td>
-0,0044</td>
+0,0076</td>
    <td>
 0,7852</td>
    <td>
@@ -233,3 +233,4 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 <p><img width=800 src="./img/adult.png" alt="datset_adult">
 <p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult">
 <p><img width=800 src="./img/bank-marketing.png" alt="datset_adult">
+<p><img width=800 src="./img/Click_prediction_small.png" alt="datset_adult">
