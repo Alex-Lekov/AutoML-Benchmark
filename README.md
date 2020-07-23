@@ -23,15 +23,15 @@ In the benchmark framework:
 # Binary-Classification
 Sum of revers positions in the rating for all datasets. (The bigger, the better):
 
-<img width=800 src="./img/AUC_place_v2.png" alt="bench">
+<img width=700 src="./img/Total_SUM.png" alt="bench">
 
 
 | Framework | Place |
 | ------ | ------ |
-| AutoML_Alex | 30 |
-| CatBoost | 25 |
-| H2o | 20 |
-| Auto_ml | 19 |
+| AutoML_Alex | 29 |
+| CatBoost | 23 |
+| H2o | 17 |
+| Auto_ml | 16 |
 | LightGBM | 13 |
 | TPOT | 7 |
 
@@ -98,9 +98,9 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0076</td>
    <td>
-0,7852</td>
+<b>0,8043</b></td>
    <td>
-0,0311
+0,0235
    </td>
   </tr>
 
@@ -230,7 +230,8 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 
 
 ## Boxplot Scores:
-<p><img width=800 src="./img/adult.png" alt="datset_adult">
-<p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_adult">
-<p><img width=800 src="./img/bank-marketing.png" alt="datset_adult">
-<p><img width=800 src="./img/Click_prediction_small.png" alt="datset_adult">
+<p><img width=800 src="./img/adult.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/bank-marketing.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/Click_prediction_small.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/credit-g.png" alt="datset_Boxplot">
