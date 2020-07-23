@@ -5,12 +5,12 @@ A Performance Benchmark of Different AutoML Frameworks
 
 # Frameworks
 In the benchmark framework:
-* [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html)
-* [TPOT](https://github.com/EpistasisLab/tpot)
-* [Auto_ml](https://github.com/ClimbsRocks/auto_ml)
-* [CatBoost](https://github.com/catboost/catboost) (default params)
-* [LightGBM](https://github.com/microsoft/LightGBM) (default params)
-* [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) 
+* [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) -
+* [TPOT](https://github.com/EpistasisLab/tpot) v0.11.1
+* [Auto_ml](https://github.com/ClimbsRocks/auto_ml) -
+* [CatBoost](https://github.com/catboost/catboost) (default params) v0.22
+* [LightGBM](https://github.com/microsoft/LightGBM) (default params) v2.3.1
+* [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) v0.07.25
 
 
 # Benchmark Settings
@@ -90,9 +90,9 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0125</td>
    <td>
-0,9376</td>
+<b>0,9379</b></td>
    <td>
-0.0039</td>
+0.0038</td>
    <td>
 <b>0,7231</b></td>
    <td>
