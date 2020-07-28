@@ -15,5 +15,5 @@ RUN apt-get update && apt-get install -y \
     && apt-get -y install git iproute2 procps lsb-release
 RUN pip install --upgrade pip
 RUN pip --no-cache-dir install -r requirements.txt
-RUN pip install -i https://test.pypi.org/simple/ automl-alex==0.7.24.5
+#RUN pip install automl-alex=0.7.26
 #RUN pip install -i https://test.pypi.org/simple/ automl-alex==0.5.13.3

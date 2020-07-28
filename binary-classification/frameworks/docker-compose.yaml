@@ -28,7 +28,7 @@ services:
   #   - ../datasets:/opt/automl/datasets
   #   working_dir: /opt/automl/
   #   command: python3 -u ./model.py
-    #command: sh -c "sleep 18900 && python3 -u ./model.py"
+  #   command: sh -c "sleep 18900 && python3 -u ./model.py"
 
   # h2o:
   #   build: ./h2o

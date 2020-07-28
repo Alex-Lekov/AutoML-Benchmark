@@ -30,7 +30,7 @@ for DATASET_NAME in all_datasets_ls:
     # ./automl-benchmark/binary-classification/datasets/{DATASET_NAME}/features.json
     with open(f'./datasets/{DATASET_NAME}/features.json') as f:
         features = json.load(f)
-
+    print('='*75)
     print('LOAD DATASET')
     data = pd.read_csv(f'./datasets/{DATASET_NAME}/{DATASET_NAME}.csv')
     print('Dataset: ', DATASET_NAME, data.shape,)
@@ -95,8 +95,12 @@ for DATASET_NAME in all_datasets_ls:
 
         #y_test_predict_proba, _ = model.fit_predict()
         #y_test_predict = automl.predict(X_test)
-
+        print('*'*75)
         print('AUC: ', round(roc_auc_score(y_test, y_test_predict_proba),4))
+        print('AUC mean models: ', round(roc_auc_score(y_test, model.stack_models_predicts['predict_test'].mean()),4))
+        print('Model_0 FullX: ', round(roc_auc_score(y_test, model.predicts_model_0_full_x['predict_test'].mean()),4))
+        print('Model_1 FullX: ', round(roc_auc_score(y_test, model.predicts_model_1_full_x['predict_test'].mean()),4))
+        
         print('-'*75)
         #print('Mean Test AUC: ', round(sklearn.metrics.roc_auc_score(y_test, model._data.X_test_predicts.T.mean()),4))
 

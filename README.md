@@ -10,7 +10,7 @@ In the benchmark framework:
 * [Auto_ml](https://github.com/ClimbsRocks/auto_ml) -
 * [CatBoost](https://github.com/catboost/catboost) (default params) v0.22
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params) v2.3.1
-* [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) v0.07.25
+* [AutoML_Alex](https://github.com/Alex-Lekov/AutoML_Alex) v0.07.26
 
 
 # Benchmark Settings
