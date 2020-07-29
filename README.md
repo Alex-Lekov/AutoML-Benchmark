@@ -53,6 +53,12 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    </td>
    <td colspan="2" ><strong><a href="./binary-classification/datasets/credit-g">credit-g</a></strong>
    </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/eeg-eye-state">eeg-eye-state</a></strong>
+   </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/electricity">electricity</a></strong>
+   </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/kc1">kc1</a></strong>
+   </td>
   </tr>
   <tr>
    <td>
@@ -74,6 +80,19 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>auc_std
    </td>
    <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+    <td>auc
+   </td>
+   <td>auc_std
+   </td>
+    <td>auc
    </td>
    <td>auc_std
    </td>
@@ -98,10 +117,17 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0060</td>
    <td>
-<b>0,8043</b></td>
+<b>0,8011</b></td>
    <td>
-0,0235
+0,0229
    </td>
+   <td><b>0,9968</b></td>
+   <td><em>0,0004</em></td>
+   <td><b>0,</b></td>
+   <td>0,</td>
+   <td><b>0,</b></td>
+   <td>0,</td>
+
   </tr>
 
   <tr>
@@ -126,7 +152,13 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,7816</td>
    <td>
-0,0189</td>
+<em>0,0189</em></td>
+   <td>0</td>
+   <td>-</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
   </tr>
   <tr>
    <td>H2o
@@ -151,6 +183,12 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7765</td>
    <td>
 0,0479</td>
+   <td>0,9887</td>
+   <td>0,0016</td>
+   <td><b>0,9842</b></td>
+   <td>0,0006</td>
+   <td>0,8024</td>
+   <td>0,0380</td>
   </tr>
 
   <tr>
@@ -176,6 +214,12 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7925</td>
    <td>
 0,0227</td>
+   <td>0</td>
+   <td>-</td>
+   <td>0,9617</td>
+   <td>0,0018</td>
+   <td>0,7940</td>
+   <td>0,0267</td>
   </tr>
 
   <tr>
@@ -201,6 +245,12 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7795</td>
    <td>
 0,0274</td>
+   <td>0,9685</td>
+   <td>0,0041</td>
+   <td>0,9545</td>
+   <td>0,0026</td>
+   <td>0,7749</td>
+   <td>0,0246</td>
   </tr>
   <tr>
    <td>CatBoost
@@ -225,6 +275,12 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7837</td>
    <td>
 0,0222</td>
+   <td>0,9823</td>
+   <td>0,0023</td>
+   <td>0,9563</td>
+   <td>0,0034</td>
+   <td>0,8224</td>
+   <td>0,0226</td>
   </tr>
 </table>
 
