@@ -82,13 +82,13 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td><b>AutoML_Alex</b>
    </td>
    <td>
-<b>0,9156</b></td>
+<b>0,9160</b></td>
    <td>
-0,0037</td>
+0,0033</td>
    <td>
-<b>0,8668</b></td>
+<b>0,8687</b></td>
    <td>
-0,0125</td>
+0,0139</td>
    <td>
 <b>0,9379</b></td>
    <td>
