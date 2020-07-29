@@ -90,9 +90,9 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,0139</td>
    <td>
-<b>0,9379</b></td>
+0,9371</td>
    <td>
-0.0038</td>
+<em>0.0032</em></td>
    <td>
 <b>0,7231</b></td>
    <td>
@@ -134,11 +134,11 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    <td>
 0,9143</td>
    <td>
-0,0020</td>
+<em>0,0020</em></td>
    <td>
 0,8551</td>
    <td>
-0,0030</td>
+<em>0,0030</em></td>
    <td>
 0,9371</td>
    <td>
