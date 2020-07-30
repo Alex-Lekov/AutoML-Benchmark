@@ -15,7 +15,7 @@ import autosklearn
 print('START')
 
 MODEL_NAME = 'autosklearn'
-TIME_LIMIT = 360 # 1h
+TIME_LIMIT = 3600 # 1h
 CV = 5 
 
 for DATASET_NAME in all_datasets_ls:
@@ -53,8 +53,8 @@ for DATASET_NAME in all_datasets_ls:
         # Auto_ml
         START_EXPERIMENT = time.time()
         automl = autosklearn.classification.AutoSklearnClassifier(
-            time_left_for_this_task=(TIME_LIMIT//60),
-            metric=autosklearn.metrics.roc_auc_score,
+            time_left_for_this_task=TIME_LIMIT,
+            metric=autosklearn.metrics.roc_auc,
             seed=RANDOM_SEED,
             
         )
@@ -65,7 +65,7 @@ for DATASET_NAME in all_datasets_ls:
         except RuntimeError:
             predictions = automl.predict(X_test)
         y_test_predict_proba = predictions[:,1]
-        y_test_predict = automl.predict(X_test)
+        #y_test_predict = automl.predict(X_test)
 
         print('AUC: ', roc_auc_score(y_test, y_test_predict_proba))
 
@@ -78,7 +78,7 @@ for DATASET_NAME in all_datasets_ls:
         metrics.append({
             'AUC': round(roc_auc_score(y_test, y_test_predict_proba),4),
             'log_loss': round(log_loss(y_test, y_test_predict_proba),4),
-            'Accuracy': round(accuracy_score(y_test, y_test_predict),4),
+            'Accuracy': round(accuracy_score(y_test, (y_test_predict_proba>0.5)),4),
             'Time_min': (END_EXPERIMENT - START_EXPERIMENT)//60,
             'Time': datetime.datetime.now(),
         })

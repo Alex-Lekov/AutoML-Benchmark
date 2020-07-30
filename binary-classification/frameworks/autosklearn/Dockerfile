@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y \
 
 # Upgrade pip then install dependencies
 RUN pip install --upgrade pip
-RUN curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt \
-  | xargs -n 1 -L 1 pip install
+# RUN curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt \
+#   | xargs -n 1 -L 1 pip install
 #RUN pip --no-cache-dir install --upgrade git+https://github.com/scikit-learn-contrib/categorical-encoding
 RUN pip --no-cache-dir install -r requirements.txt
