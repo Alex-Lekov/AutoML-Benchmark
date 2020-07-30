@@ -13,5 +13,5 @@ COPY requirements.txt .
 # Configure apt and install packages
 RUN apt-get update && apt-get install -y \
     && apt-get -y install git iproute2 procps lsb-release
-RUN pip --no-cache-dir install --upgrade git+https://github.com/scikit-learn-contrib/categorical-encoding
+#RUN pip --no-cache-dir install --upgrade git+https://github.com/scikit-learn-contrib/categorical-encoding
 RUN pip --no-cache-dir install -r requirements.txt

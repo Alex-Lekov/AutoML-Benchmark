@@ -6,7 +6,7 @@ A Performance Benchmark of Different AutoML Frameworks
 # Frameworks
 In the benchmark framework:
 * [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) -
-* [TPOT](https://github.com/EpistasisLab/tpot) v0.11.1
+* [TPOT](https://github.com/EpistasisLab/tpot) v0.11.2
 * [Auto_ml](https://github.com/ClimbsRocks/auto_ml) -
 * [CatBoost](https://github.com/catboost/catboost) (default params) v0.22
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params) v2.3.1
@@ -123,10 +123,10 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
    </td>
    <td><b>0,9968</b></td>
    <td><em>0,0004</em></td>
-   <td><b>0,</b></td>
-   <td>0,</td>
-   <td><b>0,</b></td>
-   <td>0,</td>
+   <td>0,9753</td>
+   <td>0,0055</td>
+   <td><b>0,8394</b></td>
+   <td><em>0,0179</em></td>
 
   </tr>
 
@@ -153,8 +153,8 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7816</td>
    <td>
 <em>0,0189</em></td>
+   <td>0,5</td>
    <td>0</td>
-   <td>-</td>
    <td>0,</td>
    <td>0,</td>
    <td>0,</td>
@@ -214,10 +214,10 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 0,7925</td>
    <td>
 0,0227</td>
+   <td>0,5</td>
    <td>0</td>
-   <td>-</td>
    <td>0,9617</td>
-   <td>0,0018</td>
+   <td><em>0,0018</em></td>
    <td>0,7940</td>
    <td>0,0267</td>
   </tr>
@@ -291,3 +291,4 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 <p><img width=800 src="./img/bank-marketing.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/Click_prediction_small.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/credit-g.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/eeg-eye-state.png" alt="datset_Boxplot">
