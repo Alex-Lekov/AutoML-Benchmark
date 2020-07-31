@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM python:3.7-buster
 
 RUN apt-get update --fix-missing && \
     apt-get install -y --no-install-recommends \
@@ -20,14 +20,14 @@ RUN apt-get update --fix-missing && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/
     
-RUN git clone -c http.sslverify=false --recursive https://github.com/apache/incubator-mxnet mxnet
-WORKDIR mxnet
-RUN cp config/linux.cmake config.cmake && \
-    mkdir build
-WORKDIR build
-RUN cmake .. && \
-    cmake --build .
-RUN pip install -e .
+# RUN git clone -c http.sslverify=false --recursive https://github.com/apache/incubator-mxnet mxnet
+# WORKDIR mxnet
+# RUN cp config/linux.cmake config.cmake && \
+#     mkdir build
+# WORKDIR build
+# RUN cmake .. && \
+#     cmake --build .
+# RUN pip install -e .
     
 RUN mkdir -p /opt/automl
 
@@ -43,6 +43,7 @@ COPY requirements.txt .
 # RUN apt-get update && apt-get install -y \
 #     && apt-get -y install git iproute2 procps lsb-release
 
-#RUN pip install mxnet==1.6.0
+RUN pip install --upgrade pip
+RUN pip install mxnet
 RUN pip install autogluon==0.0.12
 RUN pip --no-cache-dir install -r requirements.txt

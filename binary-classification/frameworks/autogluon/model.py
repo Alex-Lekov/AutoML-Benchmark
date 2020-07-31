@@ -71,9 +71,8 @@ for DATASET_NAME in all_datasets_ls:
         y_test_predict_proba = predictor.predict_proba(test_data)
 
         print('AUC: ', roc_auc_score(y_test, y_test_predict_proba))
-        print('Total sec: ', (END_EXPERIMENT - START_EXPERIMENT))
-
         END_EXPERIMENT = time.time()
+        print('Total sec: ', (END_EXPERIMENT - START_EXPERIMENT))
 
         #preds = pd.DataFrame(predictions)
         #preds['Y'] = y_test.reset_index(drop=True)
