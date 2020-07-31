@@ -8,16 +8,16 @@ from sklearn.metrics import roc_auc_score, log_loss, accuracy_score
 from datasets import all_datasets_ls
 from datasets import preproc_data
 
-import autosklearn.classification
-import autosklearn
-#from autosklearn.experimental.askl2 import AutoSklearn2Classifier
+from autogluon import TabularPrediction as task
+from autogluon.utils.tabular.metrics import roc_auc
 
 
 print('START')
 
-MODEL_NAME = 'autosklearn'
-TIME_LIMIT = 3600 # 1h
-CV = 5 
+MODEL_NAME = 'autogluon'
+TIME_LIMIT = 300 # 1h
+CV = 5
+eval_metric = 'roc_auc'
 
 for DATASET_NAME in all_datasets_ls:
     # DATASET_NAME = 'credit-g'
@@ -26,9 +26,10 @@ for DATASET_NAME in all_datasets_ls:
     with open(f'./datasets/{DATASET_NAME}/features.json') as f:
         features = json.load(f)
     print('='*75)
+    print(features)
     
     print('='*40, 'LOAD DATASET', '='*40)
-    data= pd.read_csv(f'./datasets/{DATASET_NAME}/{DATASET_NAME}.csv')
+    data = pd.read_csv(f'./datasets/{DATASET_NAME}/{DATASET_NAME}.csv')
     print('Dataset: ', DATASET_NAME, data.shape,)
     print('PREPROC DATASET')
     X, y = preproc_data(data, features)
@@ -53,20 +54,24 @@ for DATASET_NAME in all_datasets_ls:
 
         # Auto_ml
         START_EXPERIMENT = time.time()
-        automl = autosklearn.classification.AutoSklearnClassifier(
-            time_left_for_this_task=TIME_LIMIT,
-            metric=autosklearn.metrics.roc_auc,
-            seed=RANDOM_SEED,)
-        automl.fit(X_train, y_train)
-                                           
-        try:
-            predictions = automl.predict_proba(X_test)
-        except RuntimeError:
-            predictions = automl.predict(X_test)
-        y_test_predict_proba = predictions[:,1]
-        #y_test_predict = automl.predict(X_test)
+        X_train['target'] = y_train
+        label_column = 'target'
+        train_data = task.Dataset(df = X_train)
+        
+        predictor = task.fit(train_data=train_data, 
+                             label=label_column, 
+                             eval_metric=eval_metric, 
+                             verbosity=3, 
+                             auto_stack=True, 
+                             time_limits=TIME_LIMIT)
+        
+        results = predictor.fit_summary()
+        
+        test_data = task.Dataset(df = X_test)
+        y_test_predict_proba = predictor.predict_proba(test_data)
 
         print('AUC: ', roc_auc_score(y_test, y_test_predict_proba))
+        print('Total sec: ', (END_EXPERIMENT - START_EXPERIMENT))
 
         END_EXPERIMENT = time.time()
 

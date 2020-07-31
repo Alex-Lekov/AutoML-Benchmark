@@ -7,7 +7,7 @@ A Performance Benchmark of Different AutoML Frameworks
 In the benchmark framework:
 * [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) -
 * [TPOT](https://github.com/EpistasisLab/tpot) v0.11.2
-* [Auto-sklearn](https://github.com/automl/auto-sklearn/tree/master) v0.8.0
+* [Auto-sklearn](https://github.com/automl/auto-sklearn/) v0.8.0
 * [Auto_ml](https://github.com/ClimbsRocks/auto_ml) -
 * [CatBoost](https://github.com/catboost/catboost) (default params) v0.22
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params) v2.3.1
@@ -195,8 +195,8 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
   <tr>
    <td>Auto-sklearn
    </td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>0,9121</td>
+   <td>0,0031</td>
    <td>0,</td>
    <td>0,</td>
    <td>0,</td>
