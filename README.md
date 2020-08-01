@@ -195,16 +195,16 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
   <tr>
    <td>Auto-sklearn
    </td>
-   <td>0,9121</td>
+   <td>0,9112</td>
    <td>0,0031</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>0,5</td>
+   <td>0</td>
+   <td>0,9345</td>
+   <td>0,0045</td>
+   <td>0,7046</td>
+   <td>0,0064</td>
+   <td>0,7798</td>
+   <td>0,0373</td>
    <td>0,</td>
    <td>0,</td>
    <td>0,</td>
