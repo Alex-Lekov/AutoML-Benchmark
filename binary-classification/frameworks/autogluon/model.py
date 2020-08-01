@@ -3,6 +3,8 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import time
 import datetime
 import json
+import os 
+import shutil
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import roc_auc_score, log_loss, accuracy_score
 from datasets import all_datasets_ls
@@ -15,9 +17,11 @@ from autogluon.utils.tabular.metrics import roc_auc
 print('START')
 
 MODEL_NAME = 'autogluon'
-TIME_LIMIT = 300 # 1h
+TIME_LIMIT = 3600 # 1h
 CV = 5
 eval_metric = 'roc_auc'
+PATH = "AutogluonModels"
+random_seed = 42
 
 for DATASET_NAME in all_datasets_ls:
     # DATASET_NAME = 'credit-g'
@@ -54,6 +58,7 @@ for DATASET_NAME in all_datasets_ls:
 
         # Auto_ml
         START_EXPERIMENT = time.time()
+        #os.mkdir('AutogluonModels')
         X_train['target'] = y_train
         label_column = 'target'
         train_data = task.Dataset(df = X_train)
@@ -61,9 +66,11 @@ for DATASET_NAME in all_datasets_ls:
         predictor = task.fit(train_data=train_data, 
                              label=label_column, 
                              eval_metric=eval_metric, 
-                             verbosity=3, 
+                             verbosity=1, 
                              auto_stack=True, 
-                             time_limits=TIME_LIMIT)
+                             save_space=True,
+                             time_limits=TIME_LIMIT,
+                             random_seed=random_seed)
         
         results = predictor.fit_summary()
         
@@ -86,5 +93,15 @@ for DATASET_NAME in all_datasets_ls:
             'Time': datetime.datetime.now(),
         })
         pd.DataFrame(metrics).to_csv(f'./result/{DATASET_NAME}_{MODEL_NAME}_metrics.csv', index=False,)
+
+        # Clean PATH
+        #shutil.rmtree(PATH)
+        for filename in os.listdir(PATH):
+            filepath = os.path.join(PATH, filename)
+            try:
+                shutil.rmtree(filepath)
+            except OSError:
+                os.remove(filepath)
+        #os.mkdir('AutogluonModels') 
 
 

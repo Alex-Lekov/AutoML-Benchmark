@@ -24,6 +24,7 @@ services:
     restart: "no"
     volumes:
     - ./autogluon:/opt/automl/
+    - /mnt/ssd_0/tmp:/opt/automl/AutogluonModels
     - ../datasets:/opt/automl/datasets
     working_dir: /opt/automl/
     command: python -u ./model.py
