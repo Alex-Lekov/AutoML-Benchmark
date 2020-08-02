@@ -69,6 +69,7 @@ for DATASET_NAME in all_datasets_ls:
                              verbosity=1, 
                              auto_stack=True, 
                              save_space=True,
+                             cache_data=False,
                              time_limits=TIME_LIMIT,
                              random_seed=random_seed)
         
