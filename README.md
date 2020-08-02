@@ -8,6 +8,7 @@ In the benchmark framework:
 * [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) -
 * [TPOT](https://github.com/EpistasisLab/tpot) v0.11.2
 * [Auto-sklearn](https://github.com/automl/auto-sklearn/) v0.8.0
+* [AutoGluon](https://github.com/awslabs/autogluon) v0.0.12
 * [Auto_ml](https://github.com/ClimbsRocks/auto_ml) -
 * [CatBoost](https://github.com/catboost/catboost) (default params) v0.22
 * [LightGBM](https://github.com/microsoft/LightGBM) (default params) v2.3.1
@@ -37,7 +38,22 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 | TPOT | 7 |
 
 
-## Total AUC on datasets:
+## Datasets
+Chose datasets from 1000 and more rows/examples
+and on which the problem has not yet been solved with 99 AUC
+
+| Name | OpenML ID | Features | Rows |
+| ------ | ------ | ------ | ------ |
+| [adult](./binary-classification/datasets/adult) | [179](https://www.openml.org/d/179) | 14 | 48842 |
+| [Amazon_employee_access](./binary-classification/datasets/Amazon_employee_access) | [4135](https://www.openml.org/d/4135) | 9 | 32769 |
+| [bank-marketing](./binary-classification/datasets/bank-marketing) | [1461](https://www.openml.org/d/1461) | 16 | 45211 |
+| [Click_prediction_small](./binary-classification/datasets/Click_prediction_small) | [1226](https://www.openml.org/d/1226) | 11 | 798964 |
+| [credit-g](./binary-classification/datasets/credit-g) | [31](https://www.openml.org/d/31) | 20 | 1000 |
+| [eeg-eye-state](./binary-classification/datasets/eeg-eye-state) | [1471](https://www.openml.org/d/1471) | 14 | 14980 |
+| [electricity](./binary-classification/datasets/electricity) | [151](https://www.openml.org/d/151) | 8 | 45312 |
+| [kc1](./binary-classification/datasets/kc1) | [1067](https://www.openml.org/d/1067) | 20 | 2109 |
+
+### Total AUC on datasets:
 
 
 <table>
@@ -307,7 +323,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 </table>
 
 
-## Boxplot Scores:
+### Boxplot Scores:
 <p><img width=800 src="./img/adult.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/Amazon_employee_access.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/bank-marketing.png" alt="datset_Boxplot">
