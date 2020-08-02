@@ -30,13 +30,20 @@ for DATASET_NAME in all_datasets_ls:
     with open(f'./datasets/{DATASET_NAME}/features.json') as f:
         features = json.load(f)
     print('='*75)
-    print(features)
+    #print(features)
     
     print('='*40, 'LOAD DATASET', '='*40)
     data = pd.read_csv(f'./datasets/{DATASET_NAME}/{DATASET_NAME}.csv')
     print('Dataset: ', DATASET_NAME, data.shape,)
     print('PREPROC DATASET')
-    X, y = preproc_data(data, features)
+    # LabelEncoded Target
+    for i in features.items():
+        if 'target' in i:
+            target_col = i[0]
+            data[target_col] = data[target_col].astype('category').cat.codes  
+    y = data[target_col]
+    X = data.drop([target_col], axis=1)
+    #X, y = preproc_data(data, features)
 
     skf = StratifiedKFold(n_splits=CV, shuffle=True, random_state=42)
 
