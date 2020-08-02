@@ -177,6 +177,7 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,</td>
    <td>0,</td>
   </tr>
+  
   <tr>
    <td>H2o
    </td>
@@ -229,7 +230,7 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,</td>
   </tr>
 
-    <tr>
+   <tr>
    <td>AutoGluon
    </td>
    <td>0,9112</td>
