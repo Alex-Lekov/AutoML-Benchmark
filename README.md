@@ -30,12 +30,13 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 
 | Framework | Place |
 | ------ | ------ |
-| AutoML_Alex | 29 |
-| CatBoost | 23 |
-| H2o | 17 |
-| Auto_ml | 16 |
-| LightGBM | 13 |
-| TPOT | 7 |
+| AutoML_Alex | 34 |
+| CatBoost | 28 |
+| H2o | 21 |
+| Auto_ml | 20 |
+| LightGBM | 17 |
+| TPOT | 11 |
+| Auto-sklearn | 9 |
 
 
 ## Datasets
