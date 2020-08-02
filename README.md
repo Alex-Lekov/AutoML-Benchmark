@@ -226,8 +226,8 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0026</td>
    <td>0,9652</td>
    <td>0,0021</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>0,8246</td>
+   <td>0,0227</td>
   </tr>
 
    <tr>
@@ -353,3 +353,4 @@ and on which the problem has not yet been solved with 99 AUC
 <p><img width=800 src="./img/credit-g.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/eeg-eye-state.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/electricity.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/kc1.png" alt="datset_Boxplot">
