@@ -221,10 +221,10 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0064</td>
    <td>0,7798</td>
    <td>0,0373</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>0,9926</td>
+   <td>0,0026</td>
+   <td>0,9652</td>
+   <td>0,0021</td>
    <td>0,</td>
    <td>0,</td>
   </tr>
@@ -233,15 +233,15 @@ and on which the problem has not yet been solved with 99 AUC
    <td>AutoGluon
    </td>
    <td>0,9112</td>
-   <td>0,0031</td>
-   <td>0,5</td>
-   <td>0</td>
-   <td>0,9345</td>
-   <td>0,0045</td>
-   <td>0,7046</td>
-   <td>0,0064</td>
-   <td>0,7798</td>
-   <td>0,0373</td>
+   <td>0,0036</td>
+   <td>0,8629</td>
+   <td>0,0109</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
    <td>0,</td>
    <td>0,</td>
    <td>0,</td>
@@ -351,3 +351,4 @@ and on which the problem has not yet been solved with 99 AUC
 <p><img width=800 src="./img/Click_prediction_small.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/credit-g.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/eeg-eye-state.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/electricity.png" alt="datset_Boxplot">
