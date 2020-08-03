@@ -174,10 +174,10 @@ and on which the problem has not yet been solved with 99 AUC
 <em>0,0189</em></td>
    <td>0,5</td>
    <td>0</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
   </tr>
   
   <tr>
@@ -245,12 +245,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0074</td>
    <td>0,7801</td>
    <td>0,0249</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
+   <td>in progress</td>
   </tr>
 
   <tr>
