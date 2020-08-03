@@ -1,7 +1,7 @@
 from .clean_data import preproc_data 
 
 all_datasets_ls = [
-          'adult',
+         # 'adult',
         # # 'airlines',
           'Amazon_employee_access',
           'bank-marketing',
