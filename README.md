@@ -30,14 +30,14 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 
 | Framework | Place |
 | ------ | ------ |
-| AutoML_Alex | 38 |
-| CatBoost | 31 |
-| AutoGluon | 28 |
-| H2o | 22 |
-| Auto_ml | 22 |
-| LightGBM | 18 |
-| TPOT | 12 |
-| Auto-sklearn | 9 |
+| AutoML_Alex | 51 |
+| AutoGluon | 44 |
+| CatBoost | 38 |
+| H2o | 34 |
+| Auto_ml | 28 |
+| LightGBM | 23 |
+| Auto-sklearn | 20 |
+| TPOT | 14 |
 
 
 ## Datasets
@@ -140,8 +140,8 @@ and on which the problem has not yet been solved with 99 AUC
    <td>
 0,0229
    </td>
-   <td><b>0,9968</b></td>
-   <td><em>0,0004</em></td>
+   <td>0,9968</td>
+   <td>0,0004</td>
    <td>0,9753</td>
    <td>0,0055</td>
    <td><b>0,8394</b></td>
@@ -174,8 +174,8 @@ and on which the problem has not yet been solved with 99 AUC
 <em>0,0189</em></td>
    <td>0,5</td>
    <td>0</td>
-   <td>in progress</td>
-   <td>in progress</td>
+   <td>0</td>
+   <td>0</td>
    <td>in progress</td>
    <td>in progress</td>
   </tr>
@@ -205,7 +205,7 @@ and on which the problem has not yet been solved with 99 AUC
 0,0479</td>
    <td>0,9887</td>
    <td>0,0016</td>
-   <td><b>0,9842</b></td>
+   <td>0,9842</td>
    <td>0,0006</td>
    <td>0,8024</td>
    <td>0,0380</td>
@@ -245,12 +245,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0074</td>
    <td>0,7801</td>
    <td>0,0249</td>
-   <td>in progress</td>
-   <td>in progress</td>
-   <td>in progress</td>
-   <td>in progress</td>
-   <td>in progress</td>
-   <td>in progress</td>
+   <td><b>0,9993</b></td>
+   <td><em>0,0002</em></td>
+   <td><b>0,9886</b></td>
+   <td>0,0006</td>
+   <td>0,8286</td>
+   <td>0,0265</td>
   </tr>
 
   <tr>
