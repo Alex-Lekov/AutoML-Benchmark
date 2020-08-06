@@ -19,15 +19,15 @@ services:
   #   #command: sh -c "sleep 18900 && python3 -u ./model.py"
   #   command: python3 -u ./model.py
 
-  autogluon:
-    build: ./autogluon
-    restart: "no"
-    volumes:
-    - ./autogluon:/opt/automl/
-    - /mnt/ssd_0/tmp:/opt/automl/AutogluonModels
-    - ../datasets:/opt/automl/datasets
-    working_dir: /opt/automl/
-    command: python -u ./model.py
+  # autogluon:
+  #   build: ./autogluon
+  #   restart: "no"
+  #   volumes:
+  #   - ./autogluon:/opt/automl/
+  #   - /mnt/ssd_0/tmp:/opt/automl/AutogluonModels
+  #   - ../datasets:/opt/automl/datasets
+  #   working_dir: /opt/automl/
+  #   command: python -u ./model.py
 
   # tpot:
   #   build: ./tpot
@@ -58,14 +58,14 @@ services:
   #   working_dir: /opt/automl/
   #   command: python3 -u model.py
 
-  # automl_alex:
-  #   build: ./automl_alex
-  #   restart: "no"
-  #   volumes:
-  #   - ./automl_alex:/opt/automl/
-  #   - ../datasets:/opt/automl/datasets
-  #   working_dir: /opt/automl/
-  #   command: python3 -u model.py
+  automl_alex:
+    build: ./automl_alex
+    restart: "no"
+    volumes:
+    - ./automl_alex:/opt/automl/
+    - ../datasets:/opt/automl/datasets
+    working_dir: /opt/automl/
+    command: python3 -u model.py
 
 
   # catboost-default:

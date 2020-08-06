@@ -83,9 +83,7 @@ for DATASET_NAME in all_datasets_ls:
         # Auto_ml
         START_EXPERIMENT = time.time()
               
-        model = AutoMLClassifier(X_train, y_train, X_test, 
-                                 #cat_encoder_names=['OneHotEncoder', 'FrequencyEncoder'],
-                                 cat_features=cat_features, 
+        model = AutoMLClassifier(X_train, y_train, X_test,
                                  random_state=RANDOM_SEED, 
                                  verbose=1)
         
