@@ -5,7 +5,7 @@ A Performance Benchmark of Different AutoML Frameworks
 
 # Frameworks
 In the benchmark framework:
-* [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) -
+* [H2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) v3.30.0.7
 * [TPOT](https://github.com/EpistasisLab/tpot) v0.11.2
 * [Auto-sklearn](https://github.com/automl/auto-sklearn/) v0.8.0
 * [AutoGluon](https://github.com/awslabs/autogluon) v0.0.12
@@ -22,7 +22,7 @@ In the benchmark framework:
 * Docker
 
 ### Server: 
-AWS: [m5d.4xlarge](https://aws.amazon.com/ru/ec2/instance-types/m5/)
+AWS: [m5d.4xlarge](https://aws.amazon.com/ru/ec2/instance-types/m5/) (16vCPU, 64Gb Mem, 2x300Gb NVMe SSD)
 
 
 # Binary-Classification
@@ -43,7 +43,7 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 | TPOT | 14 |
 
 
-## Datasets
+## Datasets (Binary-Classification)
 Chose datasets from 1000 and more rows/examples
 and on which the problem has not yet been solved with 99 AUC
 
@@ -169,7 +169,7 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,9753</td>
    <td>0,0055</td>
    <td><b>0,8394</b></td>
-   <td><em>0,0179</em></td>
+   <td><em>0,0232</em></td>
    <td><b>0,9887</b></td>
    <td>0,0017</td>
    <td>0,9643</td>
@@ -200,13 +200,19 @@ and on which the problem has not yet been solved with 99 AUC
    <td>
 0,7816</td>
    <td>
-<em>0,0189</em></td>
+   <em>0,0189</em></td>
    <td>0,5</td>
    <td>0</td>
    <td>fail</td>
-   <td></td>
+   <td>-</td>
+   <td>0,8012</td>
+   <td><em>0,0153</em></td>
+   <td>0,9734</td>
+   <td><em>0,0016</em></td>
+   <td>0,9630</td>
+   <td>0,0030</td>
    <td>fail</td>
-   <td></td>
+   <td>-</td>
   </tr>
   
   <tr>
@@ -236,8 +242,14 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0016</td>
    <td>0,9842</td>
    <td>0,0006</td>
-   <td>0,8024</td>
-   <td>0,0380</td>
+   <td>0,8230</td>
+   <td>0,0316</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
+   <td>0,</td>
   </tr>
 
   <tr>
@@ -259,6 +271,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0021</td>
    <td>0,8246</td>
    <td>0,0227</td>
+   <td>0,9813</td>
+   <td>0,0030</td>
+   <td>0,9589</td>
+   <td>0,0037</td>
+   <td>0,9328</td>
+   <td>0,0145</td>
   </tr>
 
    <tr>
@@ -280,6 +298,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0006</td>
    <td>0,8286</td>
    <td>0,0265</td>
+   <td>0,9850</td>
+   <td>0,0024</td>
+   <td><b>0,9686</b></td>
+   <td>0,0023</td>
+   <td><b>0,9377</b></td>
+   <td>0,0082</td>
   </tr>
 
   <tr>
@@ -311,6 +335,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td><em>0,0018</em></td>
    <td>0,7940</td>
    <td>0,0267</td>
+   <td>0,9786</td>
+   <td>0,0040</td>
+   <td>0,9666</td>
+   <td>0,0030</td>
+   <td>0,9312</td>
+   <td>0,0098</td>
   </tr>
 
   <tr>
@@ -342,6 +372,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0026</td>
    <td>0,7749</td>
    <td>0,0246</td>
+   <td>0,9799</td>
+   <td>0,0024</td>
+   <td>0,9532</td>
+   <td>0,0029</td>
+   <td>0,9358</td>
+   <td>0,0073</td>
   </tr>
   <tr>
    <td>CatBoost
@@ -372,6 +408,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0034</td>
    <td>0,8224</td>
    <td>0,0226</td>
+   <td>0,9789</td>
+   <td>0,0022</td>
+   <td>0,9530</td>
+   <td>0,0035</td>
+   <td>0,9362</td>
+   <td>0,0093</td>
   </tr>
 </table>
 
