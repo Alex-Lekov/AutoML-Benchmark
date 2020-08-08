@@ -21,6 +21,9 @@ In the benchmark framework:
 * Chose datasets from 1000 and more rows/examples
 * Docker
 
+### Server: 
+AWS: [m5d.4xlarge](https://aws.amazon.com/ru/ec2/instance-types/m5/)
+
 
 # Binary-Classification
 Sum of revers positions in the rating for all datasets. (The bigger, the better):
@@ -54,6 +57,9 @@ and on which the problem has not yet been solved with 99 AUC
 | [eeg-eye-state](./binary-classification/datasets/eeg-eye-state) | [1471](https://www.openml.org/d/1471) | 14 | 14980 |
 | [electricity](./binary-classification/datasets/electricity) | [151](https://www.openml.org/d/151) | 8 | 45312 |
 | [kc1](./binary-classification/datasets/kc1) | [1067](https://www.openml.org/d/1067) | 20 | 2109 |
+| [mozilla4](./binary-classification/datasets/mozilla4) | [1046](https://www.openml.org/d/1046) | 5 | 15545 |
+| [phoneme](./binary-classification/datasets/phoneme) | [1489](https://www.openml.org/d/1489) | 5 | 5404 |
+| [qsar-biodeg](./binary-classification/datasets/qsar-biodeg) | [1494](https://www.openml.org/d/1494) | 41 | 1055 |
 
 ### Total AUC on datasets:
 
@@ -77,6 +83,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td colspan="2" ><strong><a href="./binary-classification/datasets/electricity">electricity</a></strong>
    </td>
    <td colspan="2" ><strong><a href="./binary-classification/datasets/kc1">kc1</a></strong>
+   </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/mozilla4">mozilla4</a></strong>
+   </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/phoneme">phoneme</a></strong>
+   </td>
+   <td colspan="2" ><strong><a href="./binary-classification/datasets/qsar-biodeg">qsar-biodeg</a></strong>
    </td>
   </tr>
   <tr>
@@ -112,6 +124,18 @@ and on which the problem has not yet been solved with 99 AUC
    <td>auc_std
    </td>
     <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
+   </td>
+   <td>auc_std
+   </td>
+   <td>auc
    </td>
    <td>auc_std
    </td>
@@ -146,7 +170,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0055</td>
    <td><b>0,8394</b></td>
    <td><em>0,0179</em></td>
-
+   <td><b>0,9887</b></td>
+   <td>0,0017</td>
+   <td>0,9643</td>
+   <td>0,0019</td>
+   <td>0,9353</td>
+   <td>0,0140</td>
   </tr>
 
   <tr>
@@ -174,10 +203,10 @@ and on which the problem has not yet been solved with 99 AUC
 <em>0,0189</em></td>
    <td>0,5</td>
    <td>0</td>
-   <td>0</td>
-   <td>0</td>
-   <td>in progress</td>
-   <td>in progress</td>
+   <td>fail</td>
+   <td></td>
+   <td>fail</td>
+   <td></td>
   </tr>
   
   <tr>
