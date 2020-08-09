@@ -59,7 +59,12 @@ for DATASET_NAME in all_datasets_ls:
             predictions = automl.predict_proba(X_test)
         except RuntimeError:
             predictions = automl.predict(X_test)
-        y_test_predict_proba = predictions[:,1]
+        
+        # TPOT make a different predictions format, depending on the algorithm :(
+        try:
+            y_test_predict_proba = predictions[:,1]
+        except IndexError:
+            y_test_predict_proba = predictions
         y_test_predict = automl.predict(X_test)
 
         print('AUC: ', roc_auc_score(y_test, y_test_predict_proba))
