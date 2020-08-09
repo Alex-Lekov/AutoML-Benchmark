@@ -33,14 +33,14 @@ Sum of revers positions in the rating for all datasets. (The bigger, the better)
 
 | Framework | Place |
 | ------ | ------ |
-| AutoML_Alex | 51 |
-| AutoGluon | 44 |
-| CatBoost | 38 |
-| H2o | 34 |
-| Auto_ml | 28 |
-| LightGBM | 23 |
-| Auto-sklearn | 20 |
-| TPOT | 14 |
+| AutoML_Alex | 79 |
+| AutoGluon | 74 |
+| H2o | 54 |
+| CatBoost | 52 |
+| Auto_ml | 41 |
+| Auto-sklearn | 37 |
+| LightGBM | 36 |
+| TPOT | 23 |
 
 
 ## Datasets (Binary-Classification)
@@ -173,7 +173,7 @@ and on which the problem has not yet been solved with 99 AUC
    <td><b>0,9887</b></td>
    <td>0,0017</td>
    <td>0,9643</td>
-   <td>0,0019</td>
+   <td><em>0,0019</em></td>
    <td>0,9353</td>
    <td>0,0140</td>
   </tr>
@@ -203,16 +203,16 @@ and on which the problem has not yet been solved with 99 AUC
    <em>0,0189</em></td>
    <td>0,5</td>
    <td>0</td>
-   <td>fail</td>
-   <td>-</td>
+   <td>0,7721</td>
+   <td>0,0741</td>
    <td>0,8012</td>
    <td><em>0,0153</em></td>
    <td>0,9734</td>
    <td><em>0,0016</em></td>
    <td>0,9630</td>
    <td>0,0030</td>
-   <td>fail</td>
-   <td>-</td>
+   <td>0,9338</td>
+   <td>0,0491</td>
   </tr>
   
   <tr>
@@ -244,12 +244,12 @@ and on which the problem has not yet been solved with 99 AUC
    <td>0,0006</td>
    <td>0,8230</td>
    <td>0,0316</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
-   <td>0,</td>
+   <td>0,9832</td>
+   <td>0,0029</td>
+   <td>0,9632</td>
+   <td>0,0075</td>
+   <td>0,9338</td>
+   <td>0,0175</td>
   </tr>
 
   <tr>
@@ -427,3 +427,6 @@ and on which the problem has not yet been solved with 99 AUC
 <p><img width=800 src="./img/eeg-eye-state.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/electricity.png" alt="datset_Boxplot">
 <p><img width=800 src="./img/kc1.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/mozilla4.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/phoneme.png" alt="datset_Boxplot">
+<p><img width=800 src="./img/qsar-biodeg.png" alt="datset_Boxplot">
