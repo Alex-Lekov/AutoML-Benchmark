@@ -7,5 +7,5 @@ tqdm==4.43.0
 xgboost>=1.0.2
 catboost==0.22
 lightgbm==2.3.1
-tensorflow==2.2.0rc3
+tensorflow
 Keras==2.3.1
